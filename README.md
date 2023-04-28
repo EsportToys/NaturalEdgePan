@@ -27,7 +27,7 @@ This behaviour is the result of the player wanting to avoid accidentally touchin
 
 The optimal camera positioning of leaving maximal vision on the trail of your character require much more deliberate placement of the cursor to not accidentally trigger edge-motion. 
 
-This is why you see veteran players developing a habit of [clicking close to their controlled characters](youtu.be/9rTX4x7e9LE&t=378s) to maintain reactivity over direction changes -- playing the game has a pre-requisite of possessing proprioceptive control over the cursor without relying on visual confirmation.
+This is why you see veteran players developing a habit of [clicking close to their controlled characters](https://youtu.be/9rTX4x7e9LE&t=378s) to maintain reactivity over direction changes -- playing the game has a pre-requisite of possessing proprioceptive control over the cursor without relying on visual confirmation.
 
 Players who did not acquire the dexterity for cursor or camera control typically resort to the "locked camera" mode where the game automatically centers the camera on the controlled character at all times, and only occassionally unlocking it when needing to examine other parts of the game map for awareness.
 
@@ -53,7 +53,7 @@ This is a quick-and-dirty demo written in AutoIt to demonstrate a proof-of-conce
 
 If you already have AutoIt download on your system, just download and open `demo.txt` with it.
 
-Or you can download and extract the zipped release, simply double-click `RunDemo.vbs` to run.
+Or you can download and extract [the zipped release](https://github.com/EsportToys/NaturalEdgePan/releases), simply double-click `RunDemo.vbs` to run.
 
 As this is a janky demo implemented via a moving background image, I set a pretty tiny game window and proportionally lowers the Windows Pointer Speed temporarily upon launch so that it feels close enough to playing a normal game (if you move your face closer towards your display).
 
