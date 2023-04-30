@@ -38,7 +38,7 @@ Func Init()
        @CRLF & _
        "Default = Edge-Pan"    & @CRLF & _
        "Hold MB3 = Auto-Pan"   & @CRLF & _
-       "Hold MB1 = Drag-Pan"   & @CRLF & _
+       "Hold MB1 = Grab-Pan"   & @CRLF & _
        "Hold Space = Lock Cam" & @CRLF & _
        "Hold Shift = Map-Pan"  & @CRLF & _
        "CapsLk = Lock Map-Pan" , 0 , 0 ,150,$dim[3] ) , 8.5*96/GetDpiForWindow($hWnd) )
@@ -46,6 +46,8 @@ Func Init()
      Global $hOverlay = GUICreate("Overlay",$dim[2],$dim[3],$dim[0],$dim[1],0x80000000,0x02080080,$hWnd)
      Global $hCha = GUICtrlCreateButton("",Round($xImg)+Round($xCha)-$rCha,Round($yImg)+Round($yCha)-$rCha,2*$rCha+1,2*$rCha+1)
      GUICtrlSetBkColor($hCha, 0xff00ff)
+     Global $hDrg = GUICtrlCreateButton("",-6,-6,2*3+1,2*3+1)
+     GUICtrlSetBkColor($hDrg, 0xffffff)
      GUISetBkColor(0x0000F4,$hOverlay)
      DllCall("user32.dll", "bool", "SetLayeredWindowAttributes", "hwnd", $hOverlay, "INT", 0x00F40000, "byte", 255, "dword", 0x03)
 
@@ -207,9 +209,12 @@ Func ProcessInput($struct,$pos,$hWnd)
               $panX = $x
               $panY = $y
               AdlibRegister ( "Pan" , 16 )
+              Local $dim = WinGetPos($hWnd)
+              GUICtrlSetPos($hDrg,$x-3-$dim[0],$y-3-$dim[1])
            EndIf
            If BitAnd(32,$_.bflg) Then
               AdlibUnRegister ( "Pan" )
+              GUICtrlSetPos($hDrg,-7,-7)
            EndIf
            If BitAnd(1,$_.flag) Then
               ; absolute movement
@@ -276,6 +281,7 @@ Func ProcessInput($struct,$pos,$hWnd)
      ElseIf $focusChange Then 
         resetSens()
         AdlibUnRegister ( "Pan" )
+        GUICtrlSetPos($hDrg,-7,-7)
      EndIf
 EndFunc
 
