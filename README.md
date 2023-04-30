@@ -1,6 +1,6 @@
 # NaturalEdgePan
 
-A modern, mouse-like edge-panning camera instead of the gamepad-like (velocity-based) legacy model of 90's RTS games.
+A modern, mouse-like edge-panning camera instead of the legacy velocity-based behavior of 90's RTS games.
 
 https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-af13-93ed578ad0f6.mp4
 
