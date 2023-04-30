@@ -1,6 +1,8 @@
 # NaturalEdgePan
 
-A modern, mouse-based edge-panning camera instead of the legacy velocity-based behavior of 90's RTS games.
+A modern, displacement-based edge-panning instead of the legacy velocity-based behavior of 90's RTS games. 
+
+[Download demo here.](https://github.com/EsportToys/NaturalEdgePan/releases)
 
 https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-af13-93ed578ad0f6.mp4
 
@@ -9,15 +11,15 @@ https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-
 
 ## What's wrong with current systems
 
-The way top-down camera moves at a preset velocity when the cursor touches the screen/window edge is a legacy UX largely unchanged from 90's real-time-strategy games.
+The way top-down camera moves at a preset rate when the cursor touches the screen/window edge is a legacy UX largely unchanged from 90's real-time-strategy games.
 
-While some games provides a menu option for setting a preferred preset camera speed, it takes a lot of fiddling to find an acceptable compromise between being too slow for large displacements and too fast for fine adjustments.
+While some games provide menu options to adjust the panning speed/curve, it takes a lot of fiddling to find an acceptable compromise between being too slow for large displacements and too fast for fine adjustments.
 
-This has resulted in players usually being recommended to exclusively use the minimap for large movements and middle-click drag scroll for small adjustments, leaving edge-panning an infrequently used, awkward interaction unsuited to either tasks.
+This has resulted in players usually being recommended to exclusively use the minimap and hotkeys for large movements and middle-click drag scroll for small adjustments, leaving edge-panning in an awkward position being unsuited to either tasks.
 
-Basic UX common sense tells us that an action requiring the least cognitive load is best suited to frequently performed tasks, conversely an infrequently performed task requiring conscious intent should be activated by a deliberate action. 
+Basic UX common sense tells us that frequently performed tasks should have little cognitive friction, while strongly effectful actions should require conscious intent to activate. 
 
-Yet both minimap clicking and middle-click drag require a conscious action (the former needing to visually confirm where you're clicking, the latter requiring a button to activate), whereas simply moving your cursor against the edge is something that has the least cognitive load.
+Both minimap clicking and middle-click drag require a conscious action that interrupt unit control (the former needing to visually confirm where you're clicking, the latter requiring a button to activate), whereas simply moving your cursor against the edge is practically no different than generally manipulating your mouse.
 
 This inversion of frequency-of-action vs friction-against-activation leads to unnecessary cognitive burden in the skill acquisition process -- instead of skill-differentiation via expressivity, this is just learning-segregation via cruft.
 
