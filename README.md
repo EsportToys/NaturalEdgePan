@@ -1,12 +1,12 @@
 # NaturalEdgePan
 
-An RTS/MOBA camera controls scheme for the 21th century.
+A modern, mouse-like edge-panning camera instead of the gamepad-like (velocity-based) legacy model of 90's RTS games.
 
 https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-af13-93ed578ad0f6.mp4
 
 ## What's wrong with current systems
 
-The cumbersome way top-down games moves the camera at a fixed velocity when the cursor touches the screen/window edge is a vestige from 90s real-time-strategy games that has stayed entirely unchanged.
+The way top-down camera moves at a preset velocity when the cursor touches the screen/window edge is a legacy UX largely unchanged from 90's real-time-strategy games.
 
 While some games provides a menu option for setting a preferred preset camera speed, it takes a lot of fiddling to find an acceptable compromise between being too slow for large displacements and too fast for fine adjustments.
 
