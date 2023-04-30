@@ -4,6 +4,9 @@ A modern, mouse-based edge-panning camera instead of the legacy velocity-based b
 
 https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-af13-93ed578ad0f6.mp4
 
+![image](https://user-images.githubusercontent.com/98432183/235364466-d2537e0d-2602-4b69-80bf-1559104d6ba6.png)
+
+
 ## What's wrong with current systems
 
 The way top-down camera moves at a preset velocity when the cursor touches the screen/window edge is a legacy UX largely unchanged from 90's real-time-strategy games.
