@@ -6,7 +6,10 @@ A modern, displacement-based edge-panning instead of the legacy velocity-based b
 
 https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-af13-93ed578ad0f6.mp4
 
-![image](https://user-images.githubusercontent.com/98432183/235364466-d2537e0d-2602-4b69-80bf-1559104d6ba6.png)
+
+> <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/The_Operations_Room_at_RAF_Fighter_Command%27s_No._10_Group_Headquarters%2C_Rudloe_Manor_%28RAF_Box%29%2C_Wiltshire%2C_showing_WAAF_plotters_and_duty_officers_at_work%2C_1943._CH11887.jpg" width="45%" />
+> <img src="https://user-images.githubusercontent.com/98432183/235441910-5175e743-cd09-428b-a943-1b9abb30ca75.png" width="45%" />
+
 
 
 ## What's wrong with current systems
@@ -21,7 +24,7 @@ Basic UX common sense tells us that frequently performed tasks should have littl
 
 Both minimap clicking and middle-click drag require a conscious action that interrupt unit control (the former needing to visually confirm where you're clicking, the latter requiring a button to activate), whereas simply moving your cursor against the edge is practically no different than generally manipulating your mouse. Yet the effectful auto-panning is assigned to the easy-to-accidentally-trigger edge, while performing the frequently needed stateful adjustment require you to interrupt your current task to click an obscure button.
 
-This inversion of frequency-of-action vs friction-against-activation leads to unnecessary cognitive burden in the skill acquisition process -- instead of skill-differentiation via expressivity, this is just learning-segregation via cruft.
+This inversion of frequency-of-action vs friction-against-activation leads to unnecessary cognitive burden in the skill acquisition process -- instead of skill-differentiation via expressivity, this is just learning-segregation via clunckiness.
 
 A frequent source of derision towards novice players of competitive RTS/MOBA games is the tendency to leave a wide space in front of the player character towards the direction of retreat, where there is little danger and such a large field of vision is unnecessary, while completely obscuring the enemy direction where the vision is most needed for the reaction margin to dodge incoming attacks:
 
@@ -45,6 +48,10 @@ Pointing the cursor is natural, it has the least cognitive overhead (not requiri
 Instead of having the camera be constant velocity motion, simply shift it based on how much your cursor pushed against it.
 
 This effectively extend the total "mouseable area" from just the game window to the entire game map. In other words. your hands addresses the whole canvas, and the game window is simply the "foveal vision" of your eyes.
+
+> ###### Figure 2: this way of edge panning basically works like war-room table stick-thingies
+> <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/The_Operations_Room_at_RAF_Fighter_Command%27s_No._10_Group_Headquarters%2C_Rudloe_Manor_%28RAF_Box%29%2C_Wiltshire%2C_showing_WAAF_plotters_and_duty_officers_at_work%2C_1943._CH11887.jpg" width="45%" />
+> <img src="https://user-images.githubusercontent.com/98432183/235441910-5175e743-cd09-428b-a943-1b9abb30ca75.png" width="45%" />
 
 I think the reason why no games had done this before is because the operating system do not generally report cursor motion that are clipped against a clipping zone. 
 
