@@ -19,7 +19,7 @@ This has resulted in players usually being recommended to exclusively use the mi
 
 Basic UX common sense tells us that frequently performed tasks should have little cognitive friction, while strongly effectful actions should require conscious intent to activate. 
 
-Both minimap clicking and middle-click drag require a conscious action that interrupt unit control (the former needing to visually confirm where you're clicking, the latter requiring a button to activate), whereas simply moving your cursor against the edge is practically no different than generally manipulating your mouse. Yet the effectful auto-panning is assigned to the easy-to-accidentally-trigger edge, while performing the frequently needed stateful adjustment require you to interrupt your current task.
+Both minimap clicking and middle-click drag require a conscious action that interrupt unit control (the former needing to visually confirm where you're clicking, the latter requiring a button to activate), whereas simply moving your cursor against the edge is practically no different than generally manipulating your mouse. Yet the effectful auto-panning is assigned to the easy-to-accidentally-trigger edge, while performing the frequently needed stateful adjustment require you to interrupt your current task to click an obscure button.
 
 This inversion of frequency-of-action vs friction-against-activation leads to unnecessary cognitive burden in the skill acquisition process -- instead of skill-differentiation via expressivity, this is just learning-segregation via cruft.
 
