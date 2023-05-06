@@ -63,7 +63,7 @@ So to implement this, developers would need to use APIs that report raw device d
 
 This is a quick-and-dirty demo written in AutoIt to demonstrate a proof-of-concept of the solution described above.
 
-If you already have AutoIt download on your system, just download and open `demo.txt` with it.
+If you already have AutoIt download on your system, just download and open `demo.au3` with it.
 
 Or you can download and extract [the zipped release](https://github.com/EsportToys/NaturalEdgePan/releases), simply double-click `RunDemo.vbs` to run.
 
@@ -77,4 +77,4 @@ As this is a janky demo implemented via a moving background image, I set a prett
 3. Based on the starting position and the mouse delta (remember to scale it by the [Pointer Speed](https://github.com/EsportToys/MouseTray)), calculate where the cursor _would have_ landed if it were not confined to the game/display area.
 4. Displace your in-world camera by the clipped amount of mouse movement (remember to scale it to your in-world units)
 
-If you use SDL, it is not possible to implement this without using a framerate-dependent (i.e. laggy) Software Cursor, as they do not report raw device deltas which is necessary to read motion when the cursor is clipped against the window boundary.
+If you use SDL, it is not possible to implement this without using a framerate-dependent (i.e. laggy) Software Cursor, as they do not report raw device deltas when the hardware cursor is active, which is necessary to read motion when the cursor is clipped against the window boundary.
