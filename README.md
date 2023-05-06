@@ -24,7 +24,7 @@ Basic UX common sense tells us that frequently performed tasks should have littl
 
 Both minimap clicking and middle-click drag require a conscious action that interrupt unit control (the former needing to visually confirm where you're clicking, the latter requiring a button to activate), whereas simply moving your cursor against the edge is practically no different than generally manipulating your mouse. Yet the effectful auto-panning is assigned to the easy-to-accidentally-trigger edge, while performing the frequently needed stateful adjustment require you to interrupt your current task to click an obscure button.
 
-This inversion of frequency-of-action vs friction-against-activation leads to unnecessary cognitive burden in the skill acquisition process -- instead of skill-differentiation via expressivity, this is just learning-segregation via clunckiness.
+This inversion of frequency-of-action vs friction-against-activation leads to unnecessary cognitive burden in the skill acquisition process -- instead of skill-differentiation via expressivity, this is just learning-segregation via clunkiness.
 
 A frequent source of derision towards novice players of competitive RTS/MOBA games is the tendency to leave a wide space in front of the player character towards the direction of retreat, where there is little danger and such a large field of vision is unnecessary, while completely obscuring the enemy direction where the vision is most needed for the reaction margin to dodge incoming attacks:
 
