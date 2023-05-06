@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/98432183/235227114-13128d48-fe16-4c28-
 
 ## What's wrong with current systems
 
-The way top-down camera moves at a preset rate when the cursor touches the screen/window edge is a legacy UX largely unchanged from 90's real-time-strategy games.
+The way top-down camera moves at a preset rate when the cursor touches the screen/window edge is a legacy UX inherited from 90's real-time-strategy games.
 
 While some games provide menu options to adjust the panning speed/curve, it takes a lot of fiddling to find an acceptable compromise between being too slow for large displacements and too fast for fine adjustments.
 
